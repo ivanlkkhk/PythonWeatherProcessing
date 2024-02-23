@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module plot_operations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>plot_operations</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cgoogle%5Civan.lai.rrc%5Ccourse%5Cterm%205%20fa2023%5Cadev-3005-python%5Cproject%5Cplot_operations.py">c:\google\ivan.lai.rrc\course\term 5 fa2023\adev-3005-python\project\plot_operations.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;module&nbsp;create&nbsp;a&nbsp;boxplot&nbsp;and&nbsp;a&nbsp;line&nbsp;plot&nbsp;by&nbsp;using<br>
+matplotlib.&nbsp;The&nbsp;PlotOperation&nbsp;class&nbsp;require&nbsp;to&nbsp;initiate<br>
+with&nbsp;the&nbsp;weather&nbsp;data,&nbsp;which&nbsp;could&nbsp;be&nbsp;the&nbsp;data&nbsp;get&nbsp;from<br>
+the&nbsp;database,&nbsp;then&nbsp;it&nbsp;will&nbsp;have&nbsp;functions&nbsp;for&nbsp;plotting.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="calendar.html">calendar</a><br>
+</td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="plot_operations.html#PlotOperations">PlotOperations</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PlotOperations">class <strong>PlotOperations</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#PlotOperations">PlotOperations</a>(weather_data_arg)<br>
+&nbsp;<br>
+This&nbsp;class&nbsp;will&nbsp;be&nbsp;use&nbsp;for&nbsp;pop&nbsp;up&nbsp;diagrams.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PlotOperations-__init__"><strong>__init__</strong></a>(self, weather_data_arg)</dt><dd><tt>Constructor&nbsp;-&nbsp;initiate&nbsp;with&nbsp;weather&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="PlotOperations-create_boxplot"><strong>create_boxplot</strong></a>(self, start_year, end_year)</dt><dd><tt>Create&nbsp;a&nbsp;boxplot&nbsp;of&nbsp;mean&nbsp;temperatures&nbsp;for&nbsp;each&nbsp;month&nbsp;within&nbsp;the&nbsp;date&nbsp;range.<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;start_year&nbsp;(str):&nbsp;The&nbsp;starting&nbsp;year&nbsp;for&nbsp;the&nbsp;date&nbsp;range&nbsp;(e.g.,&nbsp;"2000").<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end_year&nbsp;(str):&nbsp;The&nbsp;ending&nbsp;year&nbsp;for&nbsp;the&nbsp;date&nbsp;range&nbsp;(e.g.,&nbsp;"2020").</tt></dd></dl>
+
+<dl><dt><a name="PlotOperations-create_lineplot"><strong>create_lineplot</strong></a>(self, year, month)</dt><dd><tt>Create&nbsp;a&nbsp;line&nbsp;plot&nbsp;of&nbsp;daily&nbsp;mean&nbsp;temperatures&nbsp;for&nbsp;a&nbsp;specific&nbsp;year&nbsp;and&nbsp;month.<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year&nbsp;(str):&nbsp;The&nbsp;year&nbsp;to&nbsp;plot&nbsp;data&nbsp;for&nbsp;(e.g.,&nbsp;"2020").<br>
+&nbsp;&nbsp;&nbsp;&nbsp;month&nbsp;(str):&nbsp;The&nbsp;month&nbsp;to&nbsp;plot&nbsp;data&nbsp;for&nbsp;(e.g.,&nbsp;"1").</tt></dd></dl>
+
+<dl><dt><a name="PlotOperations-create_lineplot_by_date"><strong>create_lineplot_by_date</strong></a>(self, year_month)</dt><dd><tt>Create&nbsp;a&nbsp;line&nbsp;plot&nbsp;of&nbsp;daily&nbsp;mean&nbsp;temperatures&nbsp;for&nbsp;a&nbsp;specific&nbsp;date.<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;date&nbsp;(str):&nbsp;The&nbsp;date&nbsp;to&nbsp;plot&nbsp;data&nbsp;for&nbsp;in&nbsp;"YYYY-MM-DD"&nbsp;format.</tt></dd></dl>
+
+<dl><dt><a name="PlotOperations-days_in_month"><strong>days_in_month</strong></a>(self, year_month)</dt><dd><tt>Get&nbsp;the&nbsp;number&nbsp;of&nbsp;days&nbsp;of&nbsp;month.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module dbcm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>dbcm</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cgoogle%5Civan.lai.rrc%5Ccourse%5Cterm%205%20fa2023%5Cadev-3005-python%5Cproject%5Cdbcm.py">c:\google\ivan.lai.rrc\course\term 5 fa2023\adev-3005-python\project\dbcm.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;module&nbsp;used&nbsp;to&nbsp;manage&nbsp;database&nbsp;connection,<br>
+and&nbsp;cursor.&nbsp;which&nbsp;allow&nbsp;other&nbsp;function&nbsp;to&nbsp;use&nbsp;it&nbsp;by<br>
+context&nbsp;management.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="dbcm.html#DBCM">DBCM</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DBCM">class <strong>DBCM</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#DBCM">DBCM</a>(db_name)<br>
+&nbsp;<br>
+Class&nbsp;for&nbsp;manage&nbsp;database&nbsp;connection&nbsp;and&nbsp;cursor,&nbsp;allow<br>
+use&nbsp;it&nbsp;by&nbsp;context&nbsp;management.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DBCM-__enter__"><strong>__enter__</strong></a>(self)</dt><dd><tt>Enter&nbsp;the&nbsp;context&nbsp;manager,&nbsp;establishing&nbsp;a&nbsp;connection&nbsp;and&nbsp;returning&nbsp;a&nbsp;cursor.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;cursor&nbsp;for&nbsp;executing&nbsp;database&nbsp;operations.</tt></dd></dl>
+
+<dl><dt><a name="DBCM-__exit__"><strong>__exit__</strong></a>(self, exc_type, exc_val, exc_tb)</dt><dd><tt>Exit&nbsp;the&nbsp;context&nbsp;manager,&nbsp;committing&nbsp;changes&nbsp;and&nbsp;closing&nbsp;the&nbsp;connection.<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exc_type:&nbsp;Type&nbsp;of&nbsp;exception&nbsp;(if&nbsp;any).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exc_val:&nbsp;Exception&nbsp;value&nbsp;(if&nbsp;any).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exc_tb:&nbsp;Exception&nbsp;traceback&nbsp;(if&nbsp;any).</tt></dd></dl>
+
+<dl><dt><a name="DBCM-__init__"><strong>__init__</strong></a>(self, db_name)</dt><dd><tt>Consturctor&nbsp;for&nbsp;initialize&nbsp;the&nbsp;database&nbsp;name.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

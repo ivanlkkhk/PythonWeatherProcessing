@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module db_operations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>db_operations</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cgoogle%5Civan.lai.rrc%5Ccourse%5Cterm%205%20fa2023%5Cadev-3005-python%5Cproject%5Cdb_operations.py">c:\google\ivan.lai.rrc\course\term 5 fa2023\adev-3005-python\project\db_operations.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;module&nbsp;create&nbsp;a&nbsp;database&nbsp;with&nbsp;using&nbsp;SQLite&nbsp;database.<br>
+This&nbsp;database&nbsp;will&nbsp;be&nbsp;used&nbsp;to&nbsp;store&nbsp;the&nbsp;weather&nbsp;information<br>
+sracped&nbsp;in&nbsp;scrape_weather.py&nbsp;and&nbsp;also&nbsp;implement&nbsp;the<br>
+fetch,&nbsp;save&nbsp;and&nbsp;purge&nbsp;function.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="db_operations.html#DBOperations">DBOperations</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DBOperations">class <strong>DBOperations</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#DBOperations">DBOperations</a>(db_name)<br>
+&nbsp;<br>
+This&nbsp;class&nbsp;handled&nbsp;all&nbsp;database&nbsp;related&nbsp;functions.&nbsp;Other<br>
+modules/functions&nbsp;requrie&nbsp;talk&nbsp;to&nbsp;database&nbsp;are&nbsp;require&nbsp;to&nbsp;talk<br>
+throught&nbsp;this&nbsp;class.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DBOperations-__init__"><strong>__init__</strong></a>(self, db_name)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="DBOperations-fetch_data"><strong>fetch_data</strong></a>(self)</dt><dd><tt>Retrieve&nbsp;data&nbsp;for&nbsp;plotting.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;list&nbsp;of&nbsp;tuples&nbsp;containing&nbsp;DB&nbsp;records.</tt></dd></dl>
+
+<dl><dt><a name="DBOperations-get_lastest_date"><strong>get_lastest_date</strong></a>(self)</dt><dd><tt>Retrieve&nbsp;the&nbsp;lastest&nbsp;date&nbsp;of&nbsp;weather&nbsp;data.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Latest&nbsp;weather&nbsp;date</tt></dd></dl>
+
+<dl><dt><a name="DBOperations-initialize_db"><strong>initialize_db</strong></a>(self)</dt><dd><tt>Create&nbsp;the&nbsp;database&nbsp;and&nbsp;the&nbsp;required&nbsp;table&nbsp;if&nbsp;it&nbsp;doesn't&nbsp;already&nbsp;exist.</tt></dd></dl>
+
+<dl><dt><a name="DBOperations-purge_data"><strong>purge_data</strong></a>(self)</dt><dd><tt>Delete&nbsp;all&nbsp;data&nbsp;from&nbsp;the&nbsp;database.</tt></dd></dl>
+
+<dl><dt><a name="DBOperations-save_data"><strong>save_data</strong></a>(self, weather)</dt><dd><tt>Save&nbsp;new&nbsp;data&nbsp;to&nbsp;the&nbsp;database,&nbsp;avoiding&nbsp;duplicates.<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;weather:&nbsp;A&nbsp;list&nbsp;of&nbsp;dictionaries&nbsp;containing&nbsp;weather&nbsp;data.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
